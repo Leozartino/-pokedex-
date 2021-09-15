@@ -1,14 +1,14 @@
-@import "./config-scss/variables.scss";
-@import "./config-scss/reset.scss";
-@import "./config-scss/rem-calc.scss";
+@use './config-scss/variables.scss';
+@use './config-scss/reset.scss';
+@use './config-scss/rem-calc.scss';
 
 html {
   font-family: "Press Start 2P", cursive;
   background: var(--primary-color);
 }
+
 main {
-  width: rem-calc(600);
-  box-sizing: border-box;
-  padding: 0 20px;
+  max-width: rem-calc(600);
   margin: 0 auto;
+  box-sizing: border-box;
 }
